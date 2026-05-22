@@ -1,0 +1,198 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.light {
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+}
+
+.dark {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+.card {
+  width: 430px;
+  overflow: hidden;
+  border-radius: 28px;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.light .card {
+  background: white;
+  color: #111827;
+}
+
+.dark .card {
+  background: #1e293b;
+  color: white;
+}
+
+.banner {
+  height: 130px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+.avatar-wrapper {
+  width: 120px;
+  margin: -60px auto 0;
+  position: relative;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  display: block;
+}
+
+.status-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.online {
+  background: #22c55e;
+}
+
+.offline {
+  background: #9ca3af;
+}
+
+.card-body {
+  padding: 20px 30px 35px;
+  text-align: center;
+}
+
+h1 {
+  margin: 15px 0 10px;
+  font-size: 30px;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.status-badge.online {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-badge.offline {
+  background: #e5e7eb;
+  color: #6b7280;
+}
+
+.info-box {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.info-box p {
+  padding: 14px 16px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  transition: 0.2s;
+}
+
+.light .info-box p {
+  background: #f8fafc;
+}
+
+.dark .info-box p {
+  background: #334155;
+}
+
+.info-box strong {
+  color: #3b82f6;
+}
+
+.hobby-section {
+  text-align: left;
+}
+
+.hobby-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hobby-tag {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.light .hobby-tag {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.dark .hobby-tag {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+.like-section {
+  margin-top: 28px;
+}
+
+.like-section h2 {
+  font-size: 22px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.light button {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+}
+
+.dark button {
+  background: linear-gradient(135deg, #475569, #334155);
+  color: white;
+}
+
+button:hover,
+.info-box p:hover,
+.hobby-tag:hover {
+  transform: translateY(-2px);
+}
