@@ -19,6 +19,7 @@ body {
 
 .dark {
   background: linear-gradient(135deg, #0f172a, #1e293b);
+
 }
 .card {
   width: 430px;
@@ -31,6 +32,14 @@ body {
 .light .card {
   background: white;
   color: #111827;
+}
+
+.light .card-body h1 {
+  color: #0f172a;
+}
+
+.light .like-section h2 {
+  color: #0f172a;
 }
 
 .dark .card {
@@ -196,3 +205,4 @@ button:hover,
 .hobby-tag:hover {
   transform: translateY(-2px);
 }
+
